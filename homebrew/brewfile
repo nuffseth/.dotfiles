@@ -1,0 +1,42 @@
+# Installation dependencies and settings
+# -----------------------------------------------------------------------------
+cask_args appdir: "/Applications"
+
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+
+# Programming languages
+# -----------------------------------------------------------------------------
+brew "asdf"
+
+# CLI Tools or other end-use software
+# -----------------------------------------------------------------------------
+brew "brew file cat"
+brew "curl"
+brew "gh"
+brew "git"
+brew "mosh"
+brew "neovim"
+brew "postgresql", restart_service: true
+brew "sqlite"
+brew "tree"
+brew "wget"
+brew "zsh"
+brew "fzf"
+
+# Dependencies for programming languages and the like
+# -----------------------------------------------------------------------------
+brew "gnupg"
+brew "openssl"
+
+## GUI Apps 
+## -----------------------------------------------------------------------------
+cask "db-browser-for-sqlite"
+cask "docker"
+cask "brave-browser"
+cask "alacritty"
+cask "obsidian"
+cask "spotify"
+cask "zoom"
