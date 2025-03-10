@@ -1,9 +1,9 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 VIM="nvim"
 
-PERSONAL=$XDG_CONFIG_HOME/personal
-source $PERSONAL/env
-for i in `find -L $PERSONAL`; do
+GLOBALZSH=$XDG_CONFIG_HOME/global
+source $GLOBALZSH/env
+for i in `find -L $GLOBALZSH`; do
     source $i
 done
 
