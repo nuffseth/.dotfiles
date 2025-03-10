@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-export STOW_FOLDERS="bin,nvim,tmux,macos,zsh,ghostty,asdf,global"
+export STOW_FOLDERS="bin,core,nvim,tmux,zsh,ghostty,asdf"
 
 change_background() {
     dconf write /org/mate/desktop/background/picture-filename "'$HOME/dotfiles/backgrounds/$(ls ~/dotfiles/backgrounds | fzf)'"
@@ -34,4 +34,8 @@ commitDotFiles() {
     git commit -m "update"
     git push origin master
     popd
+}
+
+killport() {
+    lsof -i tcp:$1 | awk 'NR!=1 {print $2}' | xargs kill -9
 }
