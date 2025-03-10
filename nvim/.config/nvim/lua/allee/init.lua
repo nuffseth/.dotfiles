@@ -1,6 +1,6 @@
-require("theprimeagen.set")
-require("theprimeagen.remap")
-require("theprimeagen.lazy_init")
+require("allee.set")
+require("allee.remap")
+require("allee.lazy_init")
 
 -- DO.not
 -- DO NOT INCLUDE THIS
@@ -52,7 +52,7 @@ autocmd('BufEnter', {
         if vim.bo.filetype == "zig" then
             vim.cmd.colorscheme("tokyonight-night")
         else
-            vim.cmd.colorscheme("rose-pine-moon")
+            vim.cmd.colorscheme("tokyonight-night")
         end
     end
 })

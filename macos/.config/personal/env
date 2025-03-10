@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-export STOW_FOLDERS="bin,nvim,tmux,macos,zsh,alacritty,asdf,personal"
+export STOW_FOLDERS="bin,nvim,tmux,macos,zsh,ghostty,asdf,personal"
 
 change_background() {
     dconf write /org/mate/desktop/background/picture-filename "'$HOME/dotfiles/backgrounds/$(ls ~/dotfiles/backgrounds | fzf)'"
