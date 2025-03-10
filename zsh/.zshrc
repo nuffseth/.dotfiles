@@ -103,10 +103,3 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zprofile
 
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
-
-# Python
-# export PYENV_ROOT="$HOME/.config/pyenv"
-# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init - bash)"
-
-. "$HOME/.local/share/../bin/env"

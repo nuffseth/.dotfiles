@@ -9,6 +9,7 @@ done
 
 # Add Homebrew to PATH
 eval $(/opt/homebrew/bin/brew shellenv)
+eval "$(zoxide init zsh)"
 
 export FLUTTERPATH="$HOME/Development/flutter/bin"
 export GIT_EDITOR=$VIM
