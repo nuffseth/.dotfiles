@@ -30,8 +30,10 @@ brew "fzf"
 # -----------------------------------------------------------------------------
 brew "gnupg"
 brew "openssl"
+brew "ripgrep"
+brew "fd"
 
-## GUI Apps 
+## GUI Apps
 ## -----------------------------------------------------------------------------
 cask "db-browser-for-sqlite"
 cask "docker"
