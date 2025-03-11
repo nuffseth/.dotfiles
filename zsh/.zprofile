@@ -24,4 +24,7 @@ export DOTFILES="$HOME/.dotfiles"
 addToPathFront $HOME/.local/scripts
 addToPathFront $HOME/.asdf/shims
 
+# Work
+addToPath $HOME/.sledge/bin
+
 bindkey -s ^f "tmux-sessionizer\n"
