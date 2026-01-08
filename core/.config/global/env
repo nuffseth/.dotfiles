@@ -41,5 +41,9 @@ killport() {
 }
 
 mci() {
-  mvn fmt:format && mvn clean install
+  if [[ "$1" == "--no-tests" ]] || [[ "$1" == "-nt" ]]; then
+    mvn fmt:format && mvn clean install -Dmaven.test.skip=true
+  else
+    mvn fmt:format && mvn clean install -Dit.skip=true -Dskip.it.tests=true
+  fi
 }

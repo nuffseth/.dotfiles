@@ -103,3 +103,9 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zprofile
 
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+. "$HOME/.local/share/../bin/env"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/a0l0m2d/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
