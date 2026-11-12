@@ -104,8 +104,32 @@ source ~/.zprofile
 
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
-. "$HOME/.local/share/../bin/env"
-
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/a0l0m2d/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/a0l0m2d/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/a0l0m2d/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/a0l0m2d/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/a0l0m2d/google-cloud-sdk/completion.zsh.inc'; fi
+
+
+# Added by Wibey CLI installation
+export PATH="/Users/a0l0m2d/.local/bin:$PATH"
+
+
+# Added by Wibey CLI installation
+export BUN_INSTALL_CACHE_DIR="/Users/a0l0m2d/.local/share/bun/cache"
+
+# Added by Code Puppy installer on Tue Jul 28 11:41:50 CDT 2026
+alias code-puppy="$HOME/.code-puppy-venv/bin/code-puppy"
+
+# Added by Code Puppy installer on Tue Jul 28 11:41:50 CDT 2026
+alias pup="$HOME/.code-puppy-venv/bin/pup"
+#sledge:binary path
+export SLEDGE_BIN=/Users/a0l0m2d/.sledge/bin
+export PATH="${PATH}:${SLEDGE_BIN}"
+#mcp-cli:binary path
+export MCP_CLI_BIN=/Users/a0l0m2d/.mcp-cli/bin
+export PATH="${PATH}:${MCP_CLI_BIN}"

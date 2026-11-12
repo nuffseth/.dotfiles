@@ -28,3 +28,7 @@ addToPathFront $HOME/.asdf/shims
 addToPath $HOME/.sledge/bin
 
 bindkey -s ^f "tmux-sessionizer\n"
+
+# export http_proxy="http://proxy.wal-mart.com:9080"
+# export https_proxy="http://proxy.wal-mart.com:9080"
+export no_proxy="localhost,127.0.0.1,postman.com,*.postman.com,.wal-mart.com,.walmart.net,.walmart.com"
